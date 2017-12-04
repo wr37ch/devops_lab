@@ -5,7 +5,7 @@ def loops(N):
         while base < N:
             print(base * base)
             base += 1
-        return
+        
 
     else:
         print("Your integer is greater than 20 or less than 1! Enter the right one ")
