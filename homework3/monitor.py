@@ -32,7 +32,7 @@ def monitor_app(interval, output, counter, path):
                  + str(NETWORK['lo0'][1]) + " bytes_sent(en0): " \
                  + str(NETWORK['en0'][0])\
          + " bytes_recv(en0): " + str(NETWORK['en0'][1])
-        file = open(path+"."+output, 'a')
+        file = open(path+output, 'a')
         file.write(result + "\n")
         file.close()
         counter += 1
