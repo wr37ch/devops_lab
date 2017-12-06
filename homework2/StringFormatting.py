@@ -1,7 +1,7 @@
 N = int(input("Enter an integer: "))
 
 
-def StringFormatting(N):
+def string_formatting(N):
     base = 1
     if 99 >= N >= 1:
         while base <= N:
