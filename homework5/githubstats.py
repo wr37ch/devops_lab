@@ -18,6 +18,7 @@ parser.add_argument('-rep','--githubrepo', type=str, help='git repo, ex: -rep de
 
 args = parser.parse_args()
 
+print("Sample how to execute script 'python githubstats.py -u wr37ch -c comments -a additions -d deletions -t datetime -user alenapy -rep devops_lab -o opener -q quitter'")
 
 user = str(args.user)
 c = str(args.comments)
