@@ -18,7 +18,7 @@ parser.add_argument('-rep','--githubrepo', type=str, help='git repo, ex: -rep de
 
 args = parser.parse_args()
 
-print("Sample how to execute script 'python githubstats.py -u wr37ch -c -a -d -t -user alenapy -rep devops_lab -o -q -s'")
+print("Sample how to execute script 'python githubstats.py -u wr37ch -c comments -a additions -d deletions -t datetime -user alenapy -rep devops_lab -o opener -q quitter'")
 
 user = str(args.user)
 c = str(args.comments)
@@ -38,7 +38,7 @@ pr_link = 'https://api.github.com/repos/{}/{}/pulls/{}'
 
 
 if args.status:
-    print("Statistic on Pull Request from repository")
+    print("Statistic on Pull Request from repository {}".format(gh_repo))
     for x in range(3):
         r = requests.get(repo_link, auth=(username, password))
         re = r.json()
@@ -54,7 +54,7 @@ if args.status:
 
 
 if args.user:
-    print("Pull Requests from the user" )
+    print("Pull Requests from the user {}".format(user) )
     r = requests.get(repo_link, auth=(username, password))
     re = r.json()
     for x in re:
