@@ -1,0 +1,16 @@
+{
+    "PYTHONPATH": "/home/vagrant/.pyenv/versions/ulad-venv",
+    "installed packages": [
+        "certifi==2017.11.5",
+        "chardet==3.0.4",
+        "idna==2.6",
+        "PyYAML==3.12",
+        "requests==2.18.4",
+        "urllib3==1.22"
+    ],
+    "name": "ulad-venv",
+    "pip location": "/home/vagrant/.pyenv/versions/ulad-venv/bin/pip",
+    "python executable location": "/home/vagrant/.pyenv/versions/ulad-venv/bin/python",
+    "site packages": "/home/vagrant/.local/lib/python3.5/site-packages",
+    "version": "3.5.4"
+}
